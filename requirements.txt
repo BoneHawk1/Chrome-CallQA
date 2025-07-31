@@ -1,0 +1,11 @@
+torch>=2.0.0
+torch-geometric>=2.3.0
+numpy>=1.21.0
+rdkit-pypi>=2022.9.1
+tqdm>=4.64.0
+wandb>=0.15.0
+scipy>=1.9.0
+matplotlib>=3.5.0
+ase>=3.22.0
+pandas>=1.5.0
+omegaconf>=2.3.0
