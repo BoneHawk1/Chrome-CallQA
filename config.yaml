@@ -1,0 +1,32 @@
+# Configuration file for 3D Molecular Diffusion Model
+
+model:
+  node_dim: 1
+  hidden_dim: 128
+  num_layers: 6
+  max_atoms: 29
+
+diffusion:
+  num_timesteps: 1000
+  beta_start: 1e-4
+  beta_end: 0.02
+  schedule_type: "linear"  # or "cosine"
+
+training:
+  batch_size: 16
+  num_epochs: 100
+  learning_rate: 1e-4
+  weight_decay: 1e-5
+  warmup_steps: 1000
+  save_every: 10
+  val_every: 5
+
+data:
+  max_atoms: 29
+  num_workers: 4
+
+inference:
+  num_inference_steps: 50
+  guidance_scale: 1.0
+  num_molecules: 10
+  num_atoms: 10
